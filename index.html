@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Doctor's Lab</title>
+    <title>The Doctor Lab & Diagnostic Center</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,6 +26,15 @@
         header img {
             max-height: 60px;
             vertical-align: middle;
+        }
+        header h1 {
+            margin: 0.5rem 0 0;
+        }
+        .tagline {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 0.5rem;
+            font-size: 1.2rem;
         }
         .container {
             padding: 2rem;
@@ -61,9 +70,6 @@
             border-radius: 5px;
             margin-top: 1rem;
         }
-        .button:hover {
-            background-color: #003f6b;
-        }
         input[type="file"], input[type="password"] {
             margin-top: 1rem;
             padding: 0.5rem;
@@ -71,15 +77,37 @@
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+        .about {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 1rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: left;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="The Doctor's Lab Logo">
-        <h1>The Doctor's Lab</h1>
+        <h1>The Doctor Lab & Diagnostic Center</h1>
     </header>
 
+    <div class="tagline">Reliable Diagnostic Solutions</div>
+
     <div class="container">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Welcome to The Doctor Lab & Diagnostic Center — your trusted partner in reliable and affordable diagnostic testing. We are committed to your health, offering state-of-the-art laboratory services with expert care and modern equipment.</p>
+        </div>
+
         <div class="card">
             <img src="ad-banner.jpg" alt="Advertisement">
             <h3>Advertisement</h3>
@@ -100,6 +128,12 @@
             <br>
             <input type="file" name="report-upload" accept=".pdf,.jpg,.png">
         </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Address:</strong> Sector 5-J, Main Bazar, Sindhi Hotel Opp. Block 162, New Karachi</p>
+        <p><strong>Phone:</strong> 0346-2549561 | <strong>WhatsApp:</strong> 0314-1246653</p>
+        <p><em>بچت بھی، صحت بھی — آپ کی صحت کی رہنمائی کا نمبر</em></p>
     </div>
 </body>
 </html>
