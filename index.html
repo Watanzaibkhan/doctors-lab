@@ -2,53 +2,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Doctor’s Lab</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-    }
-    header {
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header img {
-      height: 60px;
-    }
-    .banner, .contact {
-      text-align: center;
-      margin: 20px;
-    }
-    .banner img, .contact img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>The Doctor's Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005b96;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header img {
+            max-height: 60px;
+            vertical-align: middle;
+        }
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin-top: 1rem;
+        }
+        .report-section {
+            margin-top: 3rem;
+            background-color: #e9f0f7;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #005b96;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .button:hover {
+            background-color: #003f6b;
+        }
+        input[type="file"] {
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="The Doctor's Lab Logo">
+        <h1>The Doctor's Lab</h1>
+    </header>
 
-  <!-- Header with Logo -->
-  <header>
-    <img src="images/logo.png" alt="The Doctor's Lab Logo" />
-  </header>
+    <div class="container">
+        <div class="card">
+            <img src="ad-banner.jpg" alt="Advertisement">
+            <h3>Advertisement</h3>
+        </div>
 
-  <!-- Advertising Banner -->
-  <section class="banner">
-    <img src="images/ad-banner.jpg" alt="Advertisement" />
-  </section>
+        <div class="card">
+            <img src="numbrs.png" alt="Contact Numbers">
+            <h3>Contact Numbers</h3>
+        </div>
 
-  <!-- Contact Numbers Image -->
-  <section class="contact">
-    <img src="images/numbrs.png" alt="Contact Numbers" />
-  </section>
+        <div class="report-section">
+            <h2>Download a Sample Report</h2>
+            <a class="button" href="sample-report.pdf" download>Download Report</a>
 
+            <h2 style="margin-top: 2rem;">Upload Your Report</h2>
+            <input type="file" name="report-upload" accept=".pdf,.jpg,.png">
+        </div>
+    </div>
 </body>
 </html>
